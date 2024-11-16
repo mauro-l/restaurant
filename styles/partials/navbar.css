@@ -1,0 +1,144 @@
+header {
+    background-color: transparent;
+}
+.navbar {
+    position: sticky;
+    z-index: 100;
+    justify-content: space-between;    
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.menu-navbar {
+    gap: var(--spacing-8);
+}
+
+.menu-list > ul {
+    font-size: var(--text-lg);
+    justify-content: center;
+    gap: var(--spacing-6);
+}
+
+.menu-list > ul > li {
+    margin: 0 auto;
+}
+
+.logo-header {
+    font-family: var(--alternative-font);
+    gap: var(--spacing-2);
+}
+
+.search-box {
+    position: relative;
+}
+
+.search {
+    padding: 11px;
+    border: 2px solid var(--primary-solid);
+    border-radius: 50px;
+}
+
+.search-icon {
+    padding: 0.5rem;
+    position: absolute;
+    right: 1px;
+    background-color: var(--primary-solid);
+    border-radius: 50%;
+    border-color: none;
+    border-style: none;
+}
+
+.search-icon:active {
+    background-color: var(--primary-500);
+}
+
+.search:focus-visible {
+    outline-color: var(--primary-solid);
+    border-width: 2px;
+}
+
+.user-navbar {
+    background-color: white;
+    border: none;
+    padding: var(--spacing-2) var(--spacing-2s);
+    border-radius: 20%;    
+    box-shadow: var(--btn-shadow);
+    cursor: pointer;
+    margin: var(--spacing-0s);
+}
+
+.user-navbar:active {
+    background-color: var(--primary-300);    
+}
+
+.user-icon {
+    padding: var(--spacing-0s);
+    width: var(--spacing-5);
+    height: var(--spacing-5);
+    color: red;
+}
+
+.user-navbar > svg{
+    color: gold;
+}
+
+.menu-burger {
+    display: none;
+    padding: var(--spacing-2s);
+    background-color: var(--primary-solid);
+    border: none;
+    border-radius: 5px;
+}
+
+.menu-burger:active {
+    background-color: var(--primary-500);
+}
+
+.logo-burger {
+    display: none;
+}
+
+@media ( max-width: 640px) {
+    /* estilos para sm y mayores */
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-navbar {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: -15px;
+        flex-direction: column;
+        background-color: white;
+        padding: var(--spacing-4);
+        gap: 3rem;
+        height: 100vh;
+    }
+
+    .menu-list > ul {
+        flex-direction: column;
+    }
+
+    .search-label {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        order: -1;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+
+    .logo-header {
+        gap: var(--spacing-1);
+    }
+
+    .logo-burger {
+        display: flex;
+        margin: 0 auto;
+    }
+
+  }

@@ -1,0 +1,93 @@
+.service-card {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+
+.service-card-img {
+    width: 77px;
+    height: 77px;
+    filter: brightness(0) saturate(100%) invert(77%) sepia(7%) saturate(1416%) hue-rotate(60deg) brightness(95%) contrast(85%);
+}
+
+.service-card-text > h3 {
+    margin: 1rem 0;
+    font-size: var(--text-xl);
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.service-card-text > p {
+    color: var(--dark-500);
+    transition: color 0.2s ease;
+}
+
+/* .service-card:hover {
+    background-color: var(--primary-solid);
+    
+} */
+
+.service-card-rest {
+    
+    transition: all 0.2s ease;
+    /* transition-delay: 0.2s; */
+    border-radius: 10px;
+}
+
+.service-card-rest:hover {
+    background-image: url('/assets/images/gallery/grid/restaurant-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.05);
+}
+
+.service-card-rest::after {
+    
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    background-color: var(--primary-700);
+    opacity: 0;
+}
+
+.service-card-rest:hover::after {
+    opacity: 1;
+}
+
+.service-card-rest:hover .service-card-text > h3,
+.service-card-rest:hover .service-card-text > p {
+    color: white;
+}
+
+/* .service-card-rest:hover {
+    transform: scale(1.05);
+} */
+ /* asd */ 
+ 
+.service-card-drink {
+    background-image: url('/assets/images/gallery/grid/drinks-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.service-card-coffee {
+    background-image: url('/assets/images/gallery/grid/coffee-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.service-card-dessert {
+    background-image: url('/assets/images/gallery/grid/dessert-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}

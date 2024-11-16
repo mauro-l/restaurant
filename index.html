@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bemins</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="flex-center navbar container">
+        <div class="flex-center logo-header">
+          <picture>
+            <img src="./assets/logo (1).png" alt="logo" />
+          </picture>
+          <h1>Rissto</h1>
+        </div>
+
+        <div class="flex-center menu-navbar">
+          <div class="menu-list">
+            <ul class="flex-center">
+              <li>Home</li>
+              <li>Productos</li>
+              <li>Sobre Nosotros</li>
+              <li>Contactanos</li>
+            </ul>
+          </div>
+          <div class="search-label">
+            <div class="flex-center logo-header logo-burger">
+              <picture>
+                <img src="./assets/logo (1).png" alt="logo" />
+              </picture>
+              <h1>Rissto</h1>
+            </div>
+            <div class="search-box">
+              <input
+                type="text"
+                id="search"
+                class="search"
+                placeholder="Buscar"
+              />
+              <button class="search-icon" type="submit">
+                <span>
+                  <img src="./assets/icons/search.svg" alt="search-icon" />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div>
+            <button class="user-navbar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                height="24px"
+                width="24px"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                />
+              </svg>
+            </button>
+            <button class="user-navbar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                height="24px"
+                width="24px"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <button class="menu-burger">
+          <img src="./assets/icons/menu.svg" alt="menu burger icon" />
+          <!-- <img src="./assets/icons/menu-close.svg" alt="close menu icon" /> -->
+        </button>
+      </nav>
+      <!-- Fin de Navbar -->
+    </header>
+    <!-- Hero banner -->
+    <div class="container hero">
+      <section class="hero-content">
+        <article>
+          <h2 class="hero-title">
+            Caliente o Frío, te lo <span>Llevamos</span>
+            <br />
+            <span>Fresco</span> de la Tienda
+            <br />
+            A tu Casa
+          </h2>
+          <h3 class="hero-subtitle">
+            Somos el mejor socio para la entrega de alimentos de tus tiendas y
+            restaurantes,
+            <br />
+            entregamos de forma segura y a tiempo
+          </h3>
+        </article>
+        <article>
+          <button class="big-button big-button-fill">Pedir Ya!</button>
+          <button class="big-button">Ver Más</button>
+        </article>
+        <article>
+          <ul class="hero-list">
+            <span class="flex-center">
+              <li>
+                <img
+                  src="./assets/icons/check-icon.svg"
+                  alt="check icon"
+                  class="icon-check"
+                />Freezing Ice Cream
+              </li>
+              <li>
+                <img
+                  src="./assets/icons/check-icon.svg"
+                  alt="check icon"
+                  class="icon-check"
+                />Pizza Vendor
+              </li>
+            </span>
+            <span class="flex-center">
+              <li>
+                <img
+                  src="./assets/icons/check-icon.svg"
+                  alt="check icon"
+                  class="icon-check"
+                />Indonesian Traditional Food
+              </li>
+              <li>
+                <img
+                  src="./assets/icons/check-icon.svg"
+                  alt="check icon"
+                  class="icon-check"
+                />Vegetarian Specialty
+              </li>
+            </span>
+          </ul>
+        </article>
+      </section>
+      <section class="hero-media flex-center-center">
+        <picture class="banner-media">
+          <img
+            src="./assets/images/main-hero/banner.png"
+            alt="picture banner"
+          />
+        </picture>
+      </section>
+    </div>
+    <!-- Fin Hero Banner -->
+    <section class="icon-wrapper-box">
+      <article class="container flex-center-center icon-wrapper">
+        <div class="flex-center">
+          <picture class="icon-wrapper-img">
+            <img
+              src="./assets/images/icon-wrapper/offer.png"
+              alt="discount icon"
+            />
+          </picture>
+          <span class="icon-wrapper-text">
+            <h3>Grandes Descuentos</h3>
+            <p>lorem ipsum dolor shit amet lorem ipsum</p>
+          </span>
+        </div>
+        <div class="flex-center">
+          <picture class="icon-wrapper-img">
+            <img
+              src="./assets/images/icon-wrapper/burger.png"
+              alt="burger icon"
+            />
+          </picture>
+          <span class="icon-wrapper-text">
+            <h3>Ingredientes Frescos</h3>
+            <p>lorem ipsum dolor shit amet lorem ipsum</p>
+          </span>
+        </div>
+        <div class="flex-center">
+          <picture class="icon-wrapper-img">
+            <img
+              src="./assets/images/icon-wrapper/room-service.png"
+              alt="service icon"
+            />
+          </picture>
+          <span class="icon-wrapper-text">
+            <h3>Servicio Rápido</h3>
+            <p>lorem ipsum dolor shit amet lorem ipsum</p>
+          </span>
+        </div>
+      </article>
+      <article class="browse-menu container">
+        <div class="browse-menu-title">
+          <h3>Explora nuestro menú</h3>
+          <div>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="flex-center wrapper-card-content">
+          <div class="wrapper-card">
+            <div class="flex-center wrapper-card-top">
+              <picture class="wrapper-card-img"
+                ><img
+                  src="./assets/images/menu-small/pic2.png"
+                  alt="pasta picture"
+              /></picture>
+              <span
+                ><h4>Pasta</h4>
+                <p>Delicious and Spicy</p></span
+              >
+            </div>
+            <span class="wrapper-card-span">
+              <h5>Precio Regular</h5>
+              <p>$8500</p>
+            </span>
+            <figure class="wrapper-card-icon">+</figure>
+          </div>
+          <div class="wrapper-card">
+            <div class="flex-center wrapper-card-top">
+              <picture class="wrapper-card-img"
+                ><img
+                  src="./assets/images/menu-small/pic2.png"
+                  alt="pasta picture"
+              /></picture>
+              <span
+                ><h4>Pasta</h4>
+                <p>Delicious and Spicy</p></span
+              >
+            </div>
+            <span class="wrapper-card-span">
+              <h5>Precio Regular</h5>
+              <p>$8500</p>
+            </span>
+            <figure class="wrapper-card-icon">+</figure>
+          </div>
+          <div class="wrapper-card">
+            <div class="flex-center wrapper-card-top">
+              <picture class="wrapper-card-img"
+                ><img
+                  src="./assets/images/menu-small/pic2.png"
+                  alt="pasta picture"
+              /></picture>
+              <span
+                ><h4>Pasta</h4>
+                <p>Delicious and Spicy</p></span
+              >
+            </div>
+            <span class="wrapper-card-span">
+              <h5>Precio Regular</h5>
+              <p>$8500</p>
+            </span>
+            <figure class="wrapper-card-icon">+</figure>
+          </div>
+          <div class="wrapper-card">
+            <div class="flex-center wrapper-card-top">
+              <picture class="wrapper-card-img"
+                ><img
+                  src="./assets/images/menu-small/pic2.png"
+                  alt="pasta picture"
+              /></picture>
+              <span
+                ><h4>Pasta</h4>
+                <p>Delicious and Spicy</p></span
+              >
+            </div>
+            <span class="wrapper-card-span">
+              <h5>Precio Regular</h5>
+              <p>$8500</p>
+            </span>
+            <figure class="wrapper-card-icon">+</figure>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- Seccion Menu -->
+    <section class="flex-center-center container menu-section">
+      <article class="menu-container">
+        <h2 class="menu-title">Menú del Día</h2>
+        <div class="flex-center today-menu-container">
+          <figure class="flex-center today-menu-card">
+            <small>Más vendido</small>
+            <div>
+              <span class="today-menu-info">
+                <h3>Pasta</h3>
+                <p>$3500</p>
+              </span>
+              <button class="today-menu-btn">
+                <img src="./assets/icons/cart.svg" alt="cart icon" />
+              </button>
+            </div>
+            <figcaption>
+              <span class="today-menu-detail">
+                <h3>Pasta</h3>
+                <p>Lorem ipsum dolor sit amet, dipiscing elit, sed.</p>
+              </span>
+            </figcaption>
+          </figure>
+          <figure class="flex-center today-menu-card">
+            <small>Más vendido</small>
+            <div>
+              <span class="today-menu-info">
+                <h3>Pasta</h3>
+                <p>$3500</p>
+              </span>
+              <button class="today-menu-btn">
+                <img src="./assets/icons/cart.svg" alt="cart icon" />
+              </button>
+            </div>
+            <figcaption>
+              <span class="today-menu-detail">
+                <h3>Pasta</h3>
+                <p>Lorem ipsum dolor sit amet, dipiscing elit, sed.</p>
+              </span>
+            </figcaption>
+          </figure>
+          <figure class="flex-center today-menu-card">
+            <small>Más vendido</small>
+            <div>
+              <span class="today-menu-info">
+                <h3>Pasta</h3>
+                <p>$3500</p>
+              </span>
+              <button class="today-menu-btn">
+                <img src="./assets/icons/cart.svg" alt="cart icon" />
+              </button>
+            </div>
+            <figcaption>
+              <span class="today-menu-detail">
+                <h3>Pasta</h3>
+                <p>Lorem ipsum dolor sit amet, dipiscing elit, sed.</p>
+              </span>
+            </figcaption>
+          </figure>
+          <figure class="flex-center today-menu-card">
+            <small>Más vendido</small>
+            <div>
+              <span class="today-menu-info">
+                <h3>Pasta</h3>
+                <p>$3500</p>
+              </span>
+              <button class="today-menu-btn">
+                <img src="./assets/icons/cart.svg" alt="cart icon" />
+              </button>
+            </div>
+            <figcaption>
+              <span class="today-menu-detail">
+                <h3>Pasta</h3>
+                <p>Lorem ipsum dolor sit amet, dipiscing elit, sed.</p>
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+        <button class="flex-center big-button big-button-fill">
+          Ver Todo el Menú
+        </button>
+      </article>
+      <article class="menu-container">
+        <h2 class="menu-title">Servicios de calidad</h2>
+        <div class="flex-center service-container">
+          <div class="service-card service-card-rest">
+            <picture
+              ><img
+                class="service-card-img"
+                src="./assets/images/gallery/quality-service/restauran.png"
+                alt="image icon restaurant" /></picture
+            ><span class="service-card-text"
+              ><h3>Restaurant</h3>
+              <p>Lorem ipsum dolor sit amet, dipiscing elit, sed</p>
+            </span>
+          </div>
+          <div class="service-card service-card-drink">
+            <picture
+              ><img
+                class="service-card-img"
+                src="./assets/images/gallery/quality-service/drink.png"
+                alt="image icon drink" /></picture
+            ><span class="service-card-text"
+              ><h3>Bar</h3>
+              <p>Lorem ipsum dolor sit amet, dipiscing elit, sed</p>
+            </span>
+          </div>
+          <div class="service-card service-card-coffee">
+            <picture
+              ><img
+                class="service-card-img"
+                src="./assets/images/gallery/quality-service/coffee-cup.png"
+                alt="image icon coffee" /></picture
+            ><span class="service-card-text"
+              ><h3>Cafe</h3>
+              <p>Lorem ipsum dolor sit amet, dipiscing elit, sed</p>
+            </span>
+          </div>
+          <div class="service-card service-card-dessert">
+            <picture
+              ><img
+                class="service-card-img"
+                src="./assets/images/gallery/quality-service/cake.png"
+                alt="image icon cake" /></picture
+            ><span class="service-card-text"
+              ><h3>Dessert</h3>
+              <p>Lorem ipsum dolor sit amet, dipiscing elit, sed</p>
+            </span>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="menu-grid">
+      <article>
+        <h2 class="menu-title">Nuestro Menú</h2>
+      </article>
+    </section>
+    <!-- Fin seccion Menu  -->
+  </body>
+</html>

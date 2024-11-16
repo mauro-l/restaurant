@@ -1,0 +1,118 @@
+.browse-menu {
+    margin: 1rem auto;
+    padding: 2rem 0;
+}
+
+.icon-wrapper-box {
+    background-color: white;
+    padding: 4rem 0;
+}
+
+.icon-wrapper {
+    width: 100%;
+    gap: 2rem;
+    margin: 1rem auto;
+}
+
+.icon-wrapper > div {
+    align-items: center;
+}
+
+.icon-wrapper > div:nth-child(2) {
+    align-items: center;
+    border: 1px dashed #f2f2f2;
+    border-bottom: 0;
+    border-top: 0;
+    padding: 0 2.5rem;
+}
+
+.icon-wrapper-img {
+    margin-right: 1rem;
+    background-color: var(--primary-300);
+    border-radius: 50%;
+    padding: var(--spacing-6);
+    transition: background-color 0.3s ease;
+}
+
+.icon-wrapper-img:hover {
+    background-color: var(--primary-solid);
+    
+}
+
+.icon-wrapper-img > img {
+    filter: brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(686%) hue-rotate(1deg) brightness(106%) contrast(101%);
+    width: 45px;
+    height: 45px;
+    margin: .5rem;
+    transition: filter 0.3s ease;
+}
+
+.icon-wrapper-img:hover > img {
+    filter: brightness(0) saturate(100%) invert(100%);
+    animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.icon-wrapper-text {
+    max-width: 230px;
+    margin: .5rem 0;
+}
+
+.icon-wrapper-text > h3 {
+    font-size: var(--text-xl);
+    font-weight: 600;
+    margin: .5rem 0;
+    transition: color 0.3s ease;
+}
+
+.icon-wrapper-text > h3:hover {
+    color: var(--primary-solid);
+}
+
+.icon-wrapper-text > p {
+    margin: 0;
+    font-size: var(--text-sm);
+    font-weight: 300;
+    color: var(--dark-500);
+    line-height: 1.4;
+}
+
+.wrapper-card-content {
+    width: 100%;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.browse-menu-title > h3 {
+    font-size: var(--text-6xl);
+    font-weight: 500;
+    font-family: var(--alternative-font);
+    margin: 2rem 0 2.5rem 0;
+}
+
+@keyframes shake-bottom {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 100%;
+    }
+    10% {
+      transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      transform: rotate(4deg);
+    }
+    80% {
+      transform: rotate(-2deg);
+    }
+    90% {
+      transform: rotate(2deg);
+    }
+  }
+  
