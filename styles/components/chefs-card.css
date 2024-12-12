@@ -1,5 +1,5 @@
 .chefs-card {
-    background-image: url('/assets/images/gallery/chefs/Donato.jpg');
+    background-image: url('./assets/images/gallery/chefs/Donato.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
