@@ -24,7 +24,7 @@
     text-transform: uppercase;
     font-size: var(--text-xs);
     font-weight: 600;
-    color: white;
+    color: var(--light-font-solid);
     border-radius: 0 0 10px 0;
 }
 
@@ -71,91 +71,90 @@
 	animation: slide-out-bottom 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 .today-menu-card:hover > div {
-          -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .today-menu-info > h3 {
-    font-size: var(--text-lg);
-    font-weight: 600;
-    color: white;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--light-font-solid);
 }
 
 .today-menu-info > p {
-    color: var(--secondary-solid);
-    font-size: var(--text-lg);
-    font-weight: 600;
-    margin: 0;
-    margin-top: 5px;
+  color: var(--secondary-solid);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin: 0;
+  margin-top: 5px;
 }
 
 .today-menu-btn {
-    border: none;
-    background-color: white;
-    border-radius: 10px;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;    
-    margin-right: 1.3rem;
+  border: none;
+  background-color: var(--light-bg-accent);
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;    
+  margin-right: 1.3rem;
 }
 
 .today-menu-btn:active {
-    box-shadow: 0 0 2px inset #222222;
+  box-shadow: 0 0 2px inset #222222;
 }
 
 .today-menu-card > span {
-    position: absolute;
-    z-index: 2;
-    opacity: 0;
-    bottom: 0;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  bottom: 0;
 }
 
 
 .today-menu-detail {
-    background-color: white;
-    text-align: center;
-    padding: 1.3rem 1rem;
+  background-color: var(--light-bg-accent);
+  text-align: center;
+  padding: 1.3rem 1rem;
 }
 .today-menu-detail > h3 {
-    font-size: var(--text-xl);
-    font-weight: 600;
+  font-size: var(--text-xl);
+  font-weight: 600;
 }
 .today-menu-detail > p{
-    margin: 0;
-    margin-top: 1rem;
-    color: var(--dark-500);
-    font-size: var(--text-sm);
-    font-weight: 400;
+  margin: 0;
+  margin-top: 1rem;
+  color: var(--dark-500);
+  font-size: var(--text-sm);
+  font-weight: 400;
 }
 
 @media ( min-width: 1024px) {
-    .today-menu-card{
-        min-width: 270px;
-        min-height: 350px;
-        max-width: 280px;
-        max-height: 380px;
-    }
-
-    .today-menu-btn {
-        border: none;
-        background-color: white;
-        border-radius: 10px;
-        width: 45px;
-        height: 45px;
-        cursor: pointer;
-        margin-right: 1rem;
-    }
+  .today-menu-card{
+    min-width: 270px;
+    min-height: 350px;
+    max-width: 280px;
+    max-height: 380px;
+  }
+  .today-menu-btn {
+    border: none;
+    background-color: var(--light-bg-accent);
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
 }
 
 @-webkit-keyframes slide-in-bottom {
     0% {
       -webkit-transform: translateY(1000px);
-              transform: translateY(1000px);
+      transform: translateY(1000px);
       opacity: 0;
     }
     100% {
       -webkit-transform: translateY(0);
-              transform: translateY(0);
+      transform: translateY(0);
       opacity: 1;
     }
   }

@@ -104,9 +104,10 @@ header {
     .navbar {
         display: flex;
         justify-content: space-between;
+        box-sizing: border-box;
     }
     .menu-navbar {
-        display: flex;
+        display: none;
         position: absolute;
         top: 0;
         left: -15px;
@@ -142,3 +143,11 @@ header {
     }
 
   }
+
+  @media ( min-width: 1440px) {
+    /* estilos para sm y mayores */
+    
+    .navbar {
+        max-width: 1440px;
+    }
+}

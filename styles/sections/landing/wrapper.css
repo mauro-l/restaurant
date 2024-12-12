@@ -4,8 +4,9 @@
 }
 
 .icon-wrapper-box {
-    background-color: white;
+    background-color: var(--light-bg-accent);
     padding: 4rem 0;
+    box-sizing: border-box;
 }
 
 .icon-wrapper {
@@ -92,27 +93,58 @@
 @keyframes shake-bottom {
     0%,
     100% {
-      transform: rotate(0deg);
-      transform-origin: 50% 100%;
+        transform: rotate(0deg);
+        transform-origin: 50% 100%;
     }
     10% {
-      transform: rotate(2deg);
+        transform: rotate(2deg);
     }
     20%,
     40%,
     60% {
-      transform: rotate(-4deg);
+        transform: rotate(-4deg);
     }
     30%,
     50%,
     70% {
-      transform: rotate(4deg);
+        transform: rotate(4deg);
     }
     80% {
-      transform: rotate(-2deg);
+        transform: rotate(-2deg);
     }
     90% {
-      transform: rotate(2deg);
+        transform: rotate(2deg);
     }
-  }
+}
+
   
+@media ( max-width: 640px) {
+    
+    .icon-wrapper-box {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .icon-wrapper {
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .icon-wrapper-text > h3 {
+        font-size: var(--text-lg);
+    }
+
+    .icon-wrapper > div:nth-child(2) {
+        padding: 0;
+    }
+
+    .browse-menu-title > h3 {
+        font-size: var(--text-4xl);
+        margin: 2rem 0 2.5rem 0;
+    }
+
+
+    .wrapper-card-content {
+        display: none;
+    }
+}

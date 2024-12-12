@@ -14,10 +14,11 @@
     --dark-solid: #1F1F1F;
     --dark-900: rgb(31, 31, 31, 0.9);
     --dark-500: #666666;
-    --dark-300: rgba(31, 31, 31, 0.728);
+    --dark-300: rgba(34, 34, 34, 0.05);
 
     --dark-bg-solid: #30343F;
     --light-bg-solid: #fff8e2;
+    --light-bg-accent: #F9FAFB;
     --light-font-solid: #FFFFFF;
 
     /* Typography */

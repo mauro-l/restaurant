@@ -1,0 +1,64 @@
+.chefs-card {
+    background-image: url('/assets/images/gallery/chefs/Donato.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-width: 250px;
+    min-height: 370px;
+    max-width: 280px;
+    max-height: 380px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+.chefs-card::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    bottom: 100%;
+    right: 100%;
+    z-index: 0;
+    background-color: black;
+    opacity: .25;
+    border-radius: 100%;
+    transition: all 0.3s ease-in;
+}
+
+.chefs-card:hover::after {
+    width: 100%;
+    height: 100%;
+    bottom: 50%;
+    right: 50%;
+    transform: scale(3);
+}
+
+.chefs-card-detail {
+    box-sizing: border-box;
+    background-color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    width: 100%;
+    z-index: 1;
+}
+
+.chefs-card-detail > h3 {
+    font-size: var(--text-xl);
+    font-weight: 600;
+}
+
+.chefs-card-detail > p{
+    margin: 0;
+    margin-top: .5rem;
+    color: var(--primary-solid);
+    font-size: var(--text-sm);
+    font-weight: 400;
+}

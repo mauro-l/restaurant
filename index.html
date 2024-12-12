@@ -93,7 +93,7 @@
       <!-- Fin de Navbar -->
     </header>
     <!-- Hero banner -->
-    <div class="container hero">
+    <div class="hero" id="index">
       <section class="hero-content">
         <article>
           <h2 class="hero-title">
@@ -287,7 +287,15 @@
     <!-- Seccion Menu -->
     <section class="flex-center-center container menu-section">
       <article class="menu-container">
-        <h2 class="menu-title">Menú del Día</h2>
+        <div class="today-menu-title">
+          <img
+            src="./assets/images/background/hojas.png"
+            alt="background sheets"
+            class="sheets-images"
+            id="sheetsImage"
+          />
+          <h2 class="menu-title">Menú del Día</h2>
+        </div>
         <div class="flex-center today-menu-container">
           <figure class="flex-center today-menu-card">
             <small>Más vendido</small>
@@ -367,7 +375,15 @@
         </button>
       </article>
       <article class="menu-container">
-        <h2 class="menu-title">Servicios de calidad</h2>
+        <div class="quality-service-title">
+          <img
+            src="./assets/images/background/semillas.png"
+            alt="background seeds"
+            class="seeds-images"
+            id="seedsImage"
+          />
+          <h2 class="menu-title" id="services">Servicios de calidad</h2>
+        </div>
         <div class="flex-center service-container">
           <div class="service-card service-card-rest">
             <picture
@@ -420,7 +436,523 @@
       <article>
         <h2 class="menu-title">Nuestro Menú</h2>
       </article>
+      <article class="flex-center-center menu-grid-row">
+        <picture class="flex-center menu-row-item"
+          ><img
+            src="./assets/images/gallery/quality-service/restauran.png"
+            alt="restauran icon"
+          />
+          <h4>Todo</h4></picture
+        >
+        <picture class="flex-center menu-row-item"
+          ><img
+            src="./assets/images/icon-wrapper/room-service.png"
+            alt="minutas icon"
+          />
+          <h4>Minutas</h4>
+        </picture>
+        <picture class="flex-center menu-row-item"
+          ><img
+            src="./assets/images/gallery/quality-service/spaghetti.png"
+            alt="spaghetti icon"
+          />
+          <h4>Pastas</h4>
+        </picture>
+        <picture class="flex-center menu-row-item"
+          ><img
+            src="./assets/images/icon-wrapper/burger.png"
+            alt="burger icon"
+          />
+          <h4>Burger</h4>
+        </picture>
+        <picture class="flex-center menu-row-item"
+          ><img
+            src="./assets/images/gallery/quality-service/dessert.png"
+            alt="cake icon"
+          />
+          <h4>Postres</h4>
+        </picture>
+        <picture class="flex-center menu-row-item"
+          ><img
+            src="./assets/images/gallery/quality-service/drink.png"
+            alt="drink icon"
+          />
+          <h4>Bebidas</h4>
+        </picture>
+        <picture class="flex-center menu-row-item"
+          ><img
+            src="./assets/images/gallery/quality-service/coffee-cup.png"
+            alt="coffe icon"
+          />
+          <h4>Café</h4>
+        </picture>
+      </article>
+      <article class="container menu-grid-products">
+        <div class="menu-grid-items flex-center">
+          <img
+            src="./assets/images/menu-small/pic1.png"
+            alt="Ensalada de Atún"
+          /><span class="menu-grid-description"
+            ><h4>Ensalada de Atún. <span>$30</span></h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p></span
+          >
+        </div>
+        <div class="menu-grid-items flex-center">
+          <img
+            src="./assets/images/menu-small/pic2.png"
+            alt="Pasta con salsa roja y vegetales"
+          /><span class="menu-grid-description"
+            ><h4>Pasta con salsa roja y vegetales. <span>$60</span></h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p></span
+          >
+        </div>
+        <div class="menu-grid-items flex-center">
+          <img
+            src="./assets/images/menu-small/pic3.png"
+            alt="Tofu al curry"
+          /><span class="menu-grid-description"
+            ><h4>Tofu al curry. <span>$80</span></h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p></span
+          >
+        </div>
+        <div class="menu-grid-items flex-center">
+          <img
+            src="./assets/images/menu-small/pic4.png"
+            alt="Pollo con arroz y especias"
+          /><span class="menu-grid-description"
+            ><h4>Pollo con arroz y especias. <span>$30</span></h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p></span
+          >
+        </div>
+        <div class="menu-grid-items flex-center">
+          <img
+            src="./assets/images/menu-small/pic5.png"
+            alt="Filet Grillado"
+          /><span class="menu-grid-description"
+            ><h4>Filet Grillado. <span>$30</span></h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p></span
+          >
+        </div>
+        <div class="menu-grid-items flex-center">
+          <img src="./assets/images/menu-small/pic6.png" alt="Dumplings" /><span
+            class="menu-grid-description"
+            ><h4>Dumplings. <span>$20</span></h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p></span
+          >
+        </div>
+        <div class="menu-grid-items flex-center">
+          <img
+            src="./assets/images/menu-small/pic7.png"
+            alt="Pasta con vegetales salteados"
+          /><span class="menu-grid-description"
+            ><h4>Pasta con vegetales salteados. <span>$80</span></h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p></span
+          >
+        </div>
+        <div class="menu-grid-items flex-center">
+          <img
+            src="./assets/images/menu-small/pic8.png"
+            alt="Camaron con vegetales"
+          /><span class="menu-grid-description"
+            ><h4>Camaron con vegetales. <span>$80</span></h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p></span
+          >
+        </div>
+      </article>
     </section>
     <!-- Fin seccion Menu  -->
+    <!-- Seccion testimonial -->
+    <section class="chefs-container">
+      <article>
+        <h3 class="menu-title" id="team">Master Chefs</h3>
+      </article>
+      <article class="flex-center container chefs-card-container">
+        <figure class="flex-center chefs-card">
+          <figcaption class="chefs-card-detail">
+            <h3>Donato de Santis</h3>
+            <p>Chef</p>
+          </figcaption>
+        </figure>
+        <figure class="flex-center chefs-card">
+          <figcaption class="chefs-card-detail">
+            <h3>John Doe</h3>
+            <p>Junior Chef</p>
+          </figcaption>
+        </figure>
+        <figure class="flex-center chefs-card">
+          <figcaption class="chefs-card-detail">
+            <h3>John Doe</h3>
+            <p>Junior Chef</p>
+          </figcaption>
+        </figure>
+        <figure class="flex-center chefs-card">
+          <figcaption class="chefs-card-detail">
+            <h3>John Doe</h3>
+            <p>Junior Chef</p>
+          </figcaption>
+        </figure>
+        <figure class="flex-center chefs-card">
+          <figcaption class="chefs-card-detail">
+            <h3>John Doe</h3>
+            <p>Junior Chef</p>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="pagination-chef container">
+        <span class="prev-chef"> <- </span>
+        <span class="next-chef"> -> </span>
+      </article>
+    </section>
+    <section class="testimonial-container">
+      <!-- testimonial -->
+      <h3 class="menu-title testimonial-client">Opiniones de clientes</h3>
+      <article class="flex-center-center container testimonial-card-container">
+        <div class="testimonial-card-item">
+          <div class="flex-center-center testimonial-card">
+            <figure class="testimonial-card-top">
+              <img
+                class="testimonial-card-profile"
+                src="./assets/icons/users/user1.png"
+                alt="user profile"
+              />
+              <figcaption class="flex-center-center rating">
+                <img src="./assets/icons/star.svg" alt="star icon" />
+                <img src="./assets/icons/star.svg" alt="star icon" />
+                <img src="./assets/icons/star.svg" alt="star icon" />
+                <img src="./assets/icons/star.svg" alt="star icon" />
+                <img src="./assets/icons/star.svg" alt="star icon" />
+              </figcaption>
+            </figure>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                consectetur rem modi nihil, in culpa fugiat possimus ducimus
+                beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Minus
+              </p>
+              <h3>John Doe</h3>
+            </div>
+            <picture
+              ><img src="./assets/icons/users/right-quote.png" alt="quote icon"
+            /></picture>
+          </div>
+        </div>
+        <div class="testimonial-card-item">
+          <div class="flex-center-center testimonial-card testimonial-active">
+            <figure class="testimonial-card-top">
+              <img
+                class="testimonial-card-profile"
+                src="./assets/icons/users/user1.png"
+                alt="user profile"
+              />
+              <figcaption class="flex-center-center rating">
+                <img src="./assets/icons/star.svg" alt="star icon" />
+                <img src="./assets/icons/star.svg" alt="star icon" />
+                <img src="./assets/icons/star.svg" alt="star icon" />
+                <img src="./assets/icons/star.svg" alt="star icon" />
+                <img src="./assets/icons/star.svg" alt="star icon" />
+              </figcaption>
+            </figure>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                consectetur rem modi nihil, in culpa fugiat possimus ducimus
+                beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Minus
+              </p>
+              <h3>John Doe</h3>
+            </div>
+            <picture
+              ><img src="./assets/icons/users/right-quote.png" alt="quote icon"
+            /></picture>
+          </div>
+        </div>
+        <div class="testimonial-card-item">
+          <div class="flex-center-center testimonial-card">
+            <figure class="testimonial-card-top">
+              <img
+                class="testimonial-card-profile"
+                src="./assets/icons/users/user1.png"
+                alt="user profile"
+              />
+              <figcaption class="flex-center-center rating">
+                <img src="./assets/icons/star.svg" alt="star icon" />
+                <img src="./assets/icons/star.svg" alt="star icon" />
+                <img src="./assets/icons/star.svg" alt="star icon" />
+                <img src="./assets/icons/star.svg" alt="star icon" />
+                <img src="./assets/icons/star.svg" alt="star icon" />
+              </figcaption>
+            </figure>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                consectetur rem modi nihil, in culpa fugiat possimus ducimus
+                beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Minus
+              </p>
+              <h3>John Doe</h3>
+            </div>
+            <picture
+              ><img src="./assets/icons/users/right-quote.png" alt="quote icon"
+            /></picture>
+          </div>
+        </div>
+      </article>
+      <!-- formulario -->
+      <article class="flex-center-center form-section container">
+        <div class="flex-center form-section-container container">
+          <div class="flex-center form-container">
+            <div class="form-section-title">
+              <h4>Book a Table</h4>
+              <p>
+                Lorem Ipsum is that it has a more-or-less normal distribution
+                <br />
+                of letters, to using making it look like readable English.
+              </p>
+            </div>
+            <form class="form-area" action="">
+              <div class="flex-center input-container">
+                <div class="input-field">
+                  <label for="form-name" class="label-name"
+                    >Ingrese tu nombre</label
+                  >
+                  <img
+                    src="./assets/icons/user.svg"
+                    alt="user-icon"
+                    class="form-icon"
+                  />
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="form-name"
+                    placeholder="Nombre"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="form-email" class="label-name"
+                    >Ingrese tu email</label
+                  >
+                  <img
+                    src="./assets/icons/email.svg"
+                    alt="email-icon"
+                    class="form-icon"
+                  />
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="form-email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="form-name" class="label-name"
+                    >Ingrese una fecha</label
+                  >
+                  <img
+                    src="./assets/icons/calendar.svg"
+                    alt="smartphone icon"
+                    class="form-icon"
+                  />
+                  <input
+                    type="date"
+                    class="form-input form-date"
+                    name="form-name"
+                    placeholder="Fecha"
+                  />
+                </div>
+              </div>
+              <div class="flex-center input-container">
+                <div class="input-field">
+                  <label for="form-name" class="label-name"
+                    >Ingrese su número celular</label
+                  >
+                  <img
+                    src="./assets/icons/smartphone.svg"
+                    alt="smartphone icon"
+                    class="form-icon"
+                  />
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="form-name"
+                    placeholder="Teléfono"
+                  />
+                </div>
+                <div class="input-field">
+                  <img
+                    src="./assets/icons/user-group.svg"
+                    alt="user-group icon"
+                    class="form-icon user-group-icon"
+                  />
+                  <select name="" id="" class="form-input form-select">
+                    <option class="option-select" value="" disabled selected>
+                      N° de Personas
+                    </option>
+                    <option class="option-select" value="">1</option>
+                    <option class="option-select" value="">2</option>
+                    <option class="option-select" value="">3</option>
+                    <option class="option-select" value="">4</option>
+                    <option class="option-select" value="">5</option>
+                    <option class="option-select" value="">6</option>
+                  </select>
+                </div>
+                <div class="input-field">
+                  <img
+                    src="./assets/icons/message.svg"
+                    alt="message icon"
+                    class="form-icon"
+                  />
+                  <textarea
+                    class="form-input form-textarea"
+                    name="form-message"
+                    id=""
+                    placeholder="Mensaje (opcional)"
+                    maxlength="255"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+            </form>
+            <button class="big-button big-button-fill btn-form">
+              Reservar
+            </button>
+          </div>
+          <div class="contact-info">
+            <h4>Contact Info</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing typesetting
+              industry.
+            </p>
+            <ul>
+              <li>
+                <picture
+                  ><img
+                    src="./assets/images/icon-wrapper/location.png"
+                    class="contact-icon-img"
+                    alt="location icon"
+                /></picture>
+                <span>
+                  1247/Plot No. 39, 15th Phase, Colony, <br />
+                  Kkatpally, Hyderabad
+                </span>
+              </li>
+              <li>
+                <picture
+                  ><img
+                    src="./assets/images/icon-wrapper/telephone.png"
+                    class="contact-icon-img"
+                    alt="phone icon"
+                /></picture>
+                <span>
+                  +91 987-654-3210 <br />
+                  +91 123-456-7890
+                </span>
+              </li>
+              <li>
+                <picture
+                  ><img
+                    src="./assets/images/icon-wrapper/mail.png"
+                    class="contact-icon-img"
+                    alt="email icon"
+                /></picture>
+                <span>
+                  info@example.com <br />
+                  info@example.com
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- Fin seccion testimonial -->
+    <!-- Footer -->
+    <footer class="container footer-container">
+      <section class="footer-top">
+        <article class="footer-logo-section">
+          <figure class="flex-center footer-logo">
+            <picture>
+              <img src="./assets/logo (1).png" alt="logo icon" />
+            </picture>
+            <h5>Rissto</h5>
+          </figure>
+          <small>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </small>
+        </article>
+        <article class="footer-newletter">
+          <h3>Subscribe To Our Newsletter</h3>
+          <div class="newsletter-box">
+            <label for="newsletter-input"></label>
+            <input
+              type="email"
+              name="newsletter-input"
+              placeholder="Ingrese su Email"
+              class="input-newsletter"
+            />
+            <button class="newsletter-input-img">
+              <img
+                src="./assets/images/icon-wrapper/telegram.png"
+                alt="message icon"
+                class="contact-icon-img"
+              />
+            </button>
+          </div>
+        </article>
+      </section>
+      <section class="flex-center footer-mid">
+        <article class="footer-links">
+          <h4>Nuestros links</h4>
+          <ul>
+            <li><a href="#index">Inicio</a></li>
+            <li>Sobre Nosotros</li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#team">Equipo</a></li>
+          </ul>
+        </article>
+        <article class="footer-links">
+          <h4>Ayuda y Soporte</h4>
+          <ul>
+            <li>FAQ</li>
+            <li>Tienda</li>
+            <li>Testimonios</li>
+            <li>Contáctanos</li>
+          </ul>
+        </article>
+      </section>
+      <section class="flex-center footer-copy">
+        <p>Crafted With 💗 by <span>MauroLaime</span> 2025</p>
+        <small
+          >Este proyecto fue creado con fines educativos, inspirado en un diseño
+          existente.</small
+        >
+      </section>
+    </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
