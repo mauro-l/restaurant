@@ -21,6 +21,7 @@
 /* COMPONENTS */
 
 @import url('./components/buttons.css');
+@import url('./components/hero-card.css');
 @import url('./components/wrapper-card.css');
 @import url('./components/today_menu-card.css');
 @import url('./components/chefs-card.css');

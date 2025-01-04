@@ -1,0 +1,117 @@
+.review-card {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    padding: 1.3rem 1.2rem;
+    min-width: max-content;
+    border-radius: 16px;
+    animation: decorationMove 6s ease 0s infinite normal none;
+    animation-delay: 0.5s;
+}
+
+.review-card > figure {
+    margin: 0;
+}
+
+.review-card h5 {
+    font-size: var(--text-lg);
+    margin-bottom: 1rem;
+}
+
+.review-card h5 > span {
+    font-weight: 300;
+    color: #222222;
+    text-wrap: no-wrap;
+}
+
+.star-container {
+    margin-bottom: 1rem;
+}
+
+.profile-group {
+    margin-right: 1.5rem;
+}
+
+.profile-group li {
+    margin-right: -.5rem;
+}
+
+.profile-group li img {
+    border-radius: 50%;
+    width: 48px;
+}
+
+.profile-group li:last-child {
+    border-radius: 50%;
+    background-color: var(--primary-solid);
+    width: 48px;
+    height: 48px;
+    color: var(--light-font-solid);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* second card */
+
+.food-card{
+    flex-direction: column;
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    padding: .75rem;
+    border-radius: 6px;
+    animation: decorationMove 6s ease 0s infinite normal none;
+
+}
+
+.food-card img {
+    width: 70px;
+    margin-bottom: .75rem;
+}
+
+.food-card h5{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: .25rem;
+}
+
+.food-card h6{
+    text-align: center;
+    font-weight: 400;
+    color: var(--dark-500);
+}
+
+@media ( min-width: 1024px) {
+
+    .review-card {
+        display: block;
+    }
+
+    .food-card{
+        bottom: 10%;
+        padding: 1.5rem 1rem;
+        border-radius: 16px;
+    }
+
+    .food-card img {
+        width: 120px;
+        margin-bottom: 1.2rem;
+    }
+    
+    .food-card h5{
+        font-size: var(--text-lg);
+        margin-bottom: .5rem;
+    }
+    
+    .food-card h6{
+        font-size: var(--text-base);
+    }
+}
+
